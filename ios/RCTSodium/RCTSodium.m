@@ -26,6 +26,11 @@ NSString * const ERR_FAILURE = @"FAILURE";
 
 RCT_EXPORT_MODULE();
 
++ (BOOL)requiresMainQueueSetup
+{
+  return NO;
+}
+
 + (void) initialize
 {
     [super initialize];
